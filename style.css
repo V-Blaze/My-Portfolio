@@ -188,7 +188,8 @@ body {
   padding-bottom: 1px;
 }
 
-.project-button {
+.project-button,
+.about-button {
   width: 60%;
   height: 44px;
   padding: 12px;
@@ -206,7 +207,87 @@ body {
   border-radius: 6px;
 }
 
-.project-button:hover {
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 114px;
+  padding: 114px 24px 24px 24px;
+  background: #fff;
+  border-radius: 0.5px 50px 0.5px 0.5px;
+}
+
+.about-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  color: #172b4d;
+}
+
+.about-details {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.about-connect {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.skills-set {
+  padding-left: 0.5px;
+  list-style: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.skills-set li {
+  padding: 23px 0.5px 23px 0.5px;
+  border-bottom: solid 1px #dfe1e6;
+}
+
+.skill-set-framework,
+.skill-set-skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+.about-languages {
+  padding-left: 0.5px;
+  list-style: none;
+}
+
+.about-languages li {
+  border: none;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin: 12px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  display: flex;
+  align-items: center;
+}
+
+.about-languages li img {
+  padding-right: 16px;
+}
+
+.project-button:hover,
+.about-button:hover {
   background: #6070ff;
   color: #fff;
 }

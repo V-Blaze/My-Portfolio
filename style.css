@@ -150,6 +150,12 @@ body {
   line-height: 16px;
 }
 
+.project-details li {
+  width: 45%;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
 .project-role {
   margin-right: 12px;
 }

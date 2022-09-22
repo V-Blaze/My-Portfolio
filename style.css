@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 body {
-  padding: 1px;
-  margin: 1px;
+  padding: 0.5px;
+  margin: 0.5px;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  background: white;
+  background: #e5e5e5;
 }
 
 .hero-section {
-  width: 98vw;
-  height: 98vh;
+  width: 100%;
+  height: 718px;
+  background: #fff;
+  border-radius: 0.5px 0.5px 0.5px 50px;
 }
 
 .nav-bar {
@@ -85,12 +88,217 @@ body {
   width: 70%;
 }
 
-.social-links img:hover {
-  background: #6070ff;
-  border-radius: 8px;
-}
-
 .social-links li {
   list-style-type: none;
   width: 18%;
+}
+
+.works-section {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 88px;
+  width: 100%;
+  background: #e5e5e5;
+  margin-top: 114px;
+}
+
+.works-card {
+  background: #fff;
+  box-sizing: border-box;
+  margin-right: 24px;
+  margin-left: 24px;
+  padding: 16px;
+  border: 2px solid #dfe1e6;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-image img {
+  width: 100%;
+}
+
+.project-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: start;
+  width: 100%;
+}
+
+.project-client {
+  width: 16%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.project-details ul {
+  display: flex;
+  width: 80%;
+  color: #7a869a;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.project-details li {
+  width: 45%;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.project-role {
+  margin-right: 12px;
+}
+
+.project-decription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.project-languages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding-left: 1px;
+}
+
+.project-languages li {
+  list-style: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #6070ff;
+  width: 33%;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 4px 4px 4px 4px;
+  padding-bottom: 1px;
+}
+
+.project-button,
+.about-button {
+  width: 60%;
+  height: 44px;
+  padding: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  background: #fff;
+  border: solid 2px #396df2;
+  border-radius: 6px;
+}
+
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 114px;
+  padding: 114px 24px 24px 24px;
+  background: #fff;
+  border-radius: 0.5px 50px 0.5px 0.5px;
+}
+
+.about-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  color: #172b4d;
+}
+
+.about-details {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.about-connect {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.skills-set {
+  padding-left: 0.5px;
+  list-style: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.skills-set li {
+  padding: 23px 0.5px 23px 0.5px;
+  border-bottom: solid 1px #dfe1e6;
+}
+
+.skill-set-framework,
+.skill-set-skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+.about-languages {
+  padding-left: 0.5px;
+  list-style: none;
+}
+
+.about-languages li {
+  border: none;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin: 12px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  display: flex;
+  align-items: center;
+}
+
+.about-languages li img {
+  padding-right: 16px;
+}
+
+.project-button:hover,
+.about-button:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.social-links img:hover {
+  background: #6070ff;
+  border-radius: 8px;
 }

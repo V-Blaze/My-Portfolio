@@ -3,13 +3,16 @@
 body {
   padding: 1px;
   margin: 1px;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  background: white;
+  background: #e5e5e5;
 }
 
 .hero-section {
   width: 98vw;
-  height: 98vh;
+  height: 718px;
+  background: #ffffff;
+  border-radius: 0px 0px 0px 50px;
 }
 
 .nav-bar {
@@ -93,4 +96,120 @@ body {
 .social-links li {
   list-style-type: none;
   width: 18%;
+}
+
+.works-section {
+  width: 100vw;
+  background: #e5e5e5;
+  margin-top: 114px;
+}
+
+.works-card {
+  width: auto;
+  background: #ffffff;
+  box-sizing: border-box;
+  margin-right: 24px;
+  margin-left:24px;
+  padding: 16px;
+  border: 2px solid #dfe1e6;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-image img {
+  width: 100%;
+}
+
+.project-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: start;
+  width: 100%
+}
+
+.project-client {
+  width: 20%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.project-details ul {
+  display: flex;
+  width: 80%;
+  color: #7A869A;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.project-role {
+  margin-right: 12px;
+}
+
+.project-decription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.project-languages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  padding-left: 1px;
+}
+
+.project-languages li {
+  list-style: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #6070FF;
+  width: 32%;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 4px 4px 4px 4px;
+  padding-bottom: 1px;
+}
+
+.project-button {
+  width: 60%;
+  height: 44px;
+  padding: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  background: #ffffff;
+  border: solid 2px #396df2;
+  border-radius: 6px;
+}
+
+.project-button:hover {
+  background: #6070FF;
+  color: #ffffff;
 }

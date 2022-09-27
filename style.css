@@ -293,17 +293,22 @@ body {
 }
 
 .form_section {
-  /* display: flex;
-  flex-direction: column; */
   height: 90%;
   align-items: start;
   justify-content: start;
   background: #6070ff;
-  color: white;
   background-image: url('./assets/images/contact-form-shapes-mobile.svg');
   background-size: cover;
   padding: 103px 24px 32px 24px;
   border-top-left-radius: 50px;
+}
+
+.form_section p {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 28px;
+  color: white;
 }
 
 .form-inputs {

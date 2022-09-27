@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
 body {
   padding: 0.5px;
   margin: 0.5px;
@@ -220,6 +219,7 @@ body {
   padding: 114px 24px 24px 24px;
   background: #fff;
   border-radius: 0.5px 50px 0.5px 0.5px;
+  padding-bottom: 114px;
 }
 
 .about-title {
@@ -290,6 +290,19 @@ body {
 
 .about-languages li img {
   padding-right: 16px;
+}
+
+.form_section {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  align-items: start;
+  justify-content: start;
+  background: #6070ff;
+  color: white;
+  background-image: url('./assets/images/contact-form-shapes-mobile.svg');
+  background-size: cover;
+  padding: 103px 24px 32px 24px;
 }
 
 .project-button:hover,

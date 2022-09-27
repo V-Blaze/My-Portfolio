@@ -324,14 +324,14 @@ textarea {
   padding: 15px 38px 16px 15px;
   border-radius: 12px;
 }
-.contact-me {
+
+.contact-me p{
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #fff
 }
-
 
 .contact-submit {
   width: 50%;

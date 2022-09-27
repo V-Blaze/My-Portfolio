@@ -325,10 +325,24 @@ textarea {
   border-radius: 12px;
 }
 
+.contact-submit {
+  width: 50%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+  padding: 6px;
+  border: solid 2px #6070ff;
+  color: #6070ff;
+}
+
 .project-button:hover,
-.about-button:hover {
+.about-button:hover,
+.contact-submit:hover {
   background: #6070ff;
   color: #fff;
+  border: solid 2px #fff
 }
 
 .social-links img:hover {

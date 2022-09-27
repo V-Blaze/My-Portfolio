@@ -303,6 +303,7 @@ body {
   background-image: url('./assets/images/contact-form-shapes-mobile.svg');
   background-size: cover;
   padding: 103px 24px 32px 24px;
+  border-top-left-radius: 50px;
 }
 
 .project-button:hover,

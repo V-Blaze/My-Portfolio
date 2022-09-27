@@ -325,12 +325,12 @@ textarea {
   border-radius: 12px;
 }
 
-.contact-me p{
+.contact-me {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #fff
+  color: #fff;
 }
 
 .contact-submit {
@@ -350,7 +350,7 @@ textarea {
 .contact-submit:hover {
   background: #6070ff;
   color: #fff;
-  border: solid 2px #fff
+  border: solid 2px #fff;
 }
 
 .social-links img:hover {

@@ -312,6 +312,7 @@ body {
   font-size: 20px;
   line-height: 28px;
   color: white;
+  text-align: center;
 }
 
 .form-inputs {
@@ -334,6 +335,7 @@ textarea {
   font-size: 40px;
   line-height: 52px;
   color: #fff;
+  text-align: center;
 }
 
 .contact-submit {

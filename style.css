@@ -293,8 +293,8 @@ body {
 }
 
 .form_section {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   height: 90%;
   align-items: start;
   justify-content: start;
@@ -304,6 +304,20 @@ body {
   background-size: cover;
   padding: 103px 24px 32px 24px;
   border-top-left-radius: 50px;
+}
+
+.form-inputs {
+  padding-left: 0.5px;
+  list-style: none;
+  width: 100%;
+}
+
+.form-inputs input,
+textarea {
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 15px 38px 16px 15px;
+  border-radius: 12px;
 }
 
 .project-button:hover,

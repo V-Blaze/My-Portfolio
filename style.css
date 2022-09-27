@@ -56,6 +56,7 @@ body {
   padding-right: 15px;
   margin-top: 88px;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .personal-details {
@@ -67,6 +68,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .connect {
@@ -220,6 +222,7 @@ body {
   padding: 114px 24px 24px 24px;
   background: #fff;
   border-radius: 0.5px 50px 0.5px 0.5px;
+  padding-bottom: 114px;
 }
 
 .about-title {
@@ -292,10 +295,67 @@ body {
   padding-right: 16px;
 }
 
+.form_section {
+  height: 90%;
+  align-items: start;
+  justify-content: start;
+  background: #6070ff;
+  background-image: url('./assets/images/contact-form-shapes-mobile.svg');
+  background-size: cover;
+  padding: 103px 24px 32px 24px;
+  border-top-left-radius: 50px;
+}
+
+.form_section p {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 28px;
+  color: white;
+  text-align: center;
+}
+
+.form-inputs {
+  padding-left: 0.5px;
+  list-style: none;
+  width: 100%;
+}
+
+.form-inputs input,
+textarea {
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 15px 38px 16px 15px;
+  border-radius: 12px;
+}
+
+.contact-me {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-submit {
+  width: 50%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+  padding: 6px;
+  border: solid 2px #6070ff;
+  color: #6070ff;
+}
+
 .project-button:hover,
-.about-button:hover {
+.about-button:hover,
+.contact-submit:hover {
   background: #6070ff;
   color: #fff;
+  border: solid 2px #fff;
 }
 
 .social-links img:hover {

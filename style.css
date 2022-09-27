@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
 body {
   padding: 0.5px;
   margin: 0.5px;
@@ -56,6 +55,7 @@ body {
   padding-right: 15px;
   margin-top: 88px;
   margin-bottom: 12px;
+  text-align: center
 }
 
 .personal-details {
@@ -67,6 +67,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 12px;
+  text-align: center
 }
 
 .connect {

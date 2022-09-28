@@ -336,6 +336,7 @@ textarea {
   margin-bottom: 20px;
   padding: 15px 38px 16px 15px;
   border-radius: 12px;
+  resize: vertical;
 }
 
 .contact-me {
@@ -485,5 +486,27 @@ textarea {
     flex-direction: column;
     align-items: start;
     margin-left: 0;
+  }
+  .form_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 25% 10% 25%;
+    background: url('./assets/images/contact-form-background-shapes.svg') #6070ff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .form-inputs li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .form-inputs input,
+  textarea {
+    width: 100%;
+    border-radius: 4px;
+    resize: vertical;
   }
 }

@@ -386,6 +386,15 @@ textarea {
   transition: all  2s ease-out;
 }
 
+input:hover::placeholder,
+textarea:hover::placeholder {
+  font-weight: bold;
+  color: blue;
+  transform: translate(10%);
+  transition: all .9s ease-out;
+}
+
+
 @media (min-width: 768px) {
   .mobile-menu {
     display: none;

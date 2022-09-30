@@ -381,6 +381,11 @@ textarea {
   transition: 2s ease-out;
 }
 
+.work-image:hover {
+  transform: scale(1.05);
+  transition: all  2s ease-out;
+}
+
 @media (min-width: 768px) {
   .mobile-menu {
     display: none;

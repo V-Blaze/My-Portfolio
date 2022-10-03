@@ -2,19 +2,23 @@
 
 
 
-> My Personal Portfolio Website.
+> My Personal Portfolio Website built from a Figma template provided by Microverse. This project is built using HTML and CSS.
 
 
 ## Built With
 
 - HTML $ CSS
 
-## Live Demo
+# Live Demo
 
-- Not available yet
+- [MY PORTFOLIO WEBSITE](https://v-blaze.github.io/My-Portfolio/)
 
 
-## Getting Started
+# Getting Started
+
+# Prerequisites
+
+- You must have a code compiler installed on your machine such as (VS code or Atom).
 
 **Go to your Cli and follow the steps below**
 
@@ -22,13 +26,13 @@
 
 To get a local copy up and running follow these simple example steps.
 
-### Clone the repository: go to Your Cli and run "git clone <repository url>"
+- Clone the repository: go to Your Cli and run "git clone repository url"
 
-### change into the repository:  run 'cd <repository name>'
+- change into the repository:  run 'cd repository name'
 
-### Install all the project dependences: Run 'npm Insttall' in your cli
+- Install all the project dependences: Run 'npm Insttall' in your cli
 
-### now you can view the project in the browser using any web server of choice
+- now you can view the project in the browser using any web server of choice
 
 
 
@@ -38,17 +42,17 @@ To get a local copy up and running follow these simple example steps.
 👤 **Author**
 
 - GitHub: [@githubhandle](https://github.com/v-blaze)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/valentine-ezekwonna-4b6490245)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/valentine-blaze/)
 
-## Show your support
+# Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+# Acknowledgments
 
-- Hat tip to Microverse and anyone whose code was used
+- Hat tip to Microverse..
 
 
-## 📝 License
+# 📝 License
 
 This project is [MIT](./LICENSE) licensed.

@@ -425,7 +425,7 @@ textarea:hover::placeholder {
   transition: all 0.9s ease-out;
 }
 
-@media(max-width: 768px){
+@media (max-width: 768px) {
   .menu {
     display: fixed;
     position: absolute;
@@ -446,10 +446,11 @@ textarea:hover::placeholder {
   .menu.active {
     left: 0;
   }
+
   .menu li {
     list-style: none;
   }
-  
+
   .menu a {
     font-style: normal;
     font-weight: 600;
@@ -472,6 +473,7 @@ textarea:hover::placeholder {
   .nav-bar {
     padding: 25px 155px 25px 115px;
     align-items: center;
+
     /* position: fixed; */
     top: 0;
     width: 70%;

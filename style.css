@@ -69,15 +69,13 @@ a {
 .headline {
   display: flex;
   flex-direction: column;
-  margin-top: 8%;
+  margin-top: 7%;
   height: 60vh;
   width: 100%;
   align-items: start;
   padding-bottom: 125px;
   justify-content: start;
   background-image: url("./assets/images/header-shapes-mobile.svg");
-
-  /* background-size: cover; */
   background-size: 100% 100%;
 }
 
@@ -441,7 +439,6 @@ textarea:hover::placeholder {
     padding-top: 30%;
     transition: 0.3s;
     margin-top: 0;
-    border: solid blue 2px;
     backdrop-filter: blur(8px);
   }
 
@@ -460,11 +457,6 @@ textarea:hover::placeholder {
     line-height: 44px;
     color: #fff;
   }
-
-  /* .nav-bar {
-    backdrop-filter: blur(8px);
-    box-shadow: 0 20px 30px rgba(0,0,0,0.15);
-  } */
 }
 
 @media (min-width: 768px) {

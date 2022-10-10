@@ -69,14 +69,16 @@ a {
 .headline {
   display: flex;
   flex-direction: column;
-  padding-top: 15%;
-  height: 90%;
+  margin-top: 8%;
+  height: 60vh;
   width: 100%;
   align-items: start;
   padding-bottom: 125px;
   justify-content: start;
   background-image: url("./assets/images/header-shapes-mobile.svg");
-  background-size: cover;
+
+  /* background-size: cover; */
+  background-size: 100% 100%;
 }
 
 .greeting {
@@ -473,8 +475,6 @@ textarea:hover::placeholder {
   .nav-bar {
     padding: 25px 155px 25px 115px;
     align-items: center;
-
-    /* position: fixed; */
     top: 0;
     width: 70%;
   }
@@ -509,7 +509,7 @@ textarea:hover::placeholder {
 
   .headline-content {
     height: 100%;
-    padding: 3% 20% 5% 20%;
+    padding: 3% 20% 5% 1%;
   }
 
   .greeting {

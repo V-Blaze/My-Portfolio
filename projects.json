@@ -10,7 +10,6 @@
         "live-link": "#",
         "source-link": "#",
         "direction": "left"
-        
     },
     {
         "name": "Multi-Post Stories",
@@ -36,7 +35,6 @@
         "live-link": "#",
         "source-link": "#",
         "direction": "left"
-        
     },
     {
         "name": "Multi-Post Stories",
@@ -49,6 +47,5 @@
         "live-link": "#",
         "source-link": "#",
         "direction": "right"
-        
     }
 ]

@@ -41,8 +41,8 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/v-blaze)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/valentine-blaze/)
+- GitHub: [@V-blaze](https://github.com/v-blaze)
+- LinkedIn: [Valentine-Blaze](https://www.linkedin.com/in/valentine-blaze/)
 
 # Show your support
 

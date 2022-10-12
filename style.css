@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-
-/* * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-} */
-
 html {
   scroll-behavior: smooth;
 }
@@ -567,6 +560,7 @@ textarea {
   background: #6070ff;
   color: #fff;
   border: solid 2px #fff;
+  cursor: pointer;
 }
 
 .social-links img:hover {

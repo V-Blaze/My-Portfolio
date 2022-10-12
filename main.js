@@ -2,6 +2,8 @@ const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 const projectPortfolio = document.querySelector('#portfolio');
 const popupModal = document.querySelector('.popup');
+const contactForm = document.querySelector('.contact_form');
+const errorMessage = document.querySelector('.error-msg');
 
 hamburger.addEventListener('click', (e) => {
   e.preventDefault();
@@ -127,4 +129,16 @@ window.onload = async () => {
   }));
 };
 
+const checkUpperCase = (email) => email !== email.toLowerCase();
+
+contactForm.addEventListener('submit', (e) => {
+const emailAdd = contactForm.elements.email.value;
+e.preventDefault();
+
+if(checkUpperCase(emailAdd)){
+  errorMessage.textContent = 'Your email must contain only lower case letters';
+} else{
+  contactForm.submit();
+}
+});
 getProjects();

@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Tonic",
+        "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        "image": "./assets/images/Snapshoot-Portfolio-1.svg",
+        "technologies": ["Html", "Bootstrap", "Ruby"],
+        "client": "CANOPY",
+        "year":"2015",
+        "role": "Back End Dev",
+        "live-link": "#",
+        "source-link": "#",
+        "direction": "left"
+    },
+    {
+        "name": "Multi-Post Stories",
+        "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        "image": "./assets/images/Snapshoot-Portfolio-2.svg",
+        "technologies": ["Html", "Bootstrap", "Ruby"],
+        "client": "CANOPY",
+        "year":"2015",
+        "role": "Back End Dev",
+        "live-link": "#",
+        "source-link": "#",
+        "direction": "right"
+        
+    },
+    {
+        "name": "Tonic",
+        "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        "image": "./assets/images/Snapshoot-Portfolio-3.svg",
+        "technologies": ["Html", "Bootstrap", "Ruby"],
+        "client": "CANOPY",
+        "year":"2015",
+        "role": "Back End Dev",
+        "live-link": "#",
+        "source-link": "#",
+        "direction": "left"
+    },
+    {
+        "name": "Multi-Post Stories",
+        "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        "image": "./assets/images/Snapshoot-Portfolio-4.svg",
+        "technologies": ["Html", "Bootstrap", "Ruby"],
+        "client": "CANOPY",
+        "year":"2015",
+        "role": "Back End Dev",
+        "live-link": "#",
+        "source-link": "#",
+        "direction": "right"
+    }
+]

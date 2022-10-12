@@ -551,6 +551,20 @@ textarea {
   color: #6070ff;
 }
 
+.error-msg-li {
+  margin: 4px 0;
+}
+
+.error-msg {
+  font-style: italic;
+  color: red;
+  font-size: small;
+  background-color: yellow;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1px 4px;
+}
+
 .project-button:hover,
 .about-button:hover,
 .contact-submit:hover {

@@ -26,7 +26,7 @@
 
 To get a local copy up and running follow these simple example steps.
 
-- Clone the repository: go to Your Cli and run "git clone repository url"
+- Clone the repository: go to Your Cli and run "https://v-blaze.github.io/My-Portfolio/"
 
 - change into the repository:  run 'cd repository name'
 

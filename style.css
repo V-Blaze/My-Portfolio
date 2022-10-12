@@ -559,11 +559,10 @@ textarea {
   font-style: italic;
   color: red;
   font-size: small;
-  background-color: yellow ;
+  background-color: yellow;
   border-radius: 10px;
   text-align: center;
   padding: 1px 4px;
-
 }
 
 .project-button:hover,

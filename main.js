@@ -132,13 +132,13 @@ window.onload = async () => {
 const checkUpperCase = (email) => email !== email.toLowerCase();
 
 contactForm.addEventListener('submit', (e) => {
-const emailAdd = contactForm.elements.email.value;
-e.preventDefault();
+  const emailAdd = contactForm.elements.email.value;
+  e.preventDefault();
 
-if(checkUpperCase(emailAdd)){
-  errorMessage.textContent = 'Your email must contain only lower case letters';
-} else{
-  contactForm.submit();
-}
+  if (checkUpperCase(emailAdd)) {
+    errorMessage.textContent = 'Your email must contain only lower case letters';
+  } else {
+    contactForm.submit();
+  }
 });
 getProjects();

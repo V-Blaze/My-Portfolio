@@ -5,6 +5,12 @@ const popupModal = document.querySelector('.popup');
 const contactForm = document.querySelector('.contact_form');
 const errorMessage = document.querySelector('.error-msg');
 
+const formData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
 hamburger.addEventListener('click', (e) => {
   e.preventDefault();
   hamburger.classList.toggle('active');
@@ -114,6 +120,21 @@ const addhumburgerEvent = () => {
     popupModal.innerHTML = '';
   });
 };
+
+const getInputData = () => {
+  if (localStorage.getItem('formInputs') !== null) {
+    const formLocalData = JSON.parse(localStorage.getItem('formInputs'));
+
+    contactForm.elements.email.value = formLocalData.email;
+    contactForm.elements.name.value = formLocalData.name;
+    contactForm.elements.message.value = formLocalData.message;
+
+    formData.name = formLocalData.name;
+    formData.email = formLocalData.email;
+    formData.message = formLocalData.message;
+  }
+};
+
 window.onload = async () => {
   document.querySelectorAll('.project-button').forEach((button) => button.addEventListener('click', async () => {
     const response = await fetch('./projects.json');
@@ -127,18 +148,31 @@ window.onload = async () => {
 
     addhumburgerEvent();
   }));
+  getInputData();
 };
 
 const checkUpperCase = (email) => email !== email.toLowerCase();
 
 contactForm.addEventListener('submit', (e) => {
   const emailAdd = contactForm.elements.email.value;
-  e.preventDefault();
 
+  e.preventDefault();
   if (checkUpperCase(emailAdd)) {
     errorMessage.textContent = 'Your email must contain only lower case letters';
   } else {
     contactForm.submit();
   }
 });
+
+document.querySelectorAll('.form-input').forEach((input) => input.addEventListener('keyup', () => {
+  if (input.name === 'name') {
+    formData.name = input.value;
+  } else if (input.name === 'email') {
+    formData.email = input.value;
+  } else if (input.name === 'message') {
+    formData.message = input.value;
+  }
+  localStorage.setItem('formInputs', JSON.stringify(formData));
+}));
+
 getProjects();

@@ -5,6 +5,22 @@ const popupModal = document.querySelector('.popup');
 const contactForm = document.querySelector('.contact_form');
 const errorMessage = document.querySelector('.error-msg');
 
+const projects = [
+  {
+      name: "FOODHUB",
+      description: "A JavaScript meal app built with crowd-sourced database of Recipes from around the world.",
+      image: "./assets/images/Foodhub.png",
+      technologies: ["Html", "JavaScript", "css"],
+      client: "Microverse",
+      year:"2022",
+      role: "Front End Dev",
+      liveLink: "https://v-blaze.github.io/FOODHUB/dist/",
+      sourceLink: "https://github.com/V-Blaze/FOODHUB",
+      direction: "left"
+  },
+  
+]
+
 const formData = {
   name: '',
   email: '',
@@ -102,17 +118,21 @@ const displayProjectDetail = ({
 };
 
 const getProjects = async () => {
-  const response = await fetch('./projects.json');
+  // const response = await fetch('./projects.json');
 
-  try {
-    const data = await response.json();
+  // try {
+  //   const data = await response.json();
 
-    data.forEach((project, index) => {
-      projectPortfolio.append(displayProjects(project, index));
-    });
-  } catch (error) {
-    // console.log(error);
-  }
+  //   data.forEach((project, index) => {
+  //     projectPortfolio.append(displayProjects(project, index));
+  //   });
+  // } catch (error) {
+  //   // console.log(error);
+  // }
+
+  projects.forEach((project, index) => {
+    projectPortfolio.append(displayProjects(project, index));
+  });
 };
 const addhumburgerEvent = () => {
   document.querySelector('.popup-hamburger').addEventListener('click', () => {
@@ -137,10 +157,10 @@ const getInputData = () => {
 
 window.onload = async () => {
   document.querySelectorAll('.project-button').forEach((button) => button.addEventListener('click', async () => {
-    const response = await fetch('./projects.json');
-    const data = await response.json();
+    // const response = await fetch('./projects.json');
+    // const data = await response.json();
 
-    const item = data[button.id];
+    const item = projects[button.id];
 
     popupModal.append(displayProjectDetail(item));
 

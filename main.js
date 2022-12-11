@@ -53,19 +53,7 @@ const projects = [
       liveLink: "https://v-blaze.github.io/Web3_Hackathon/",
       sourceLink: "https://github.com/V-Blaze/Web3_Hackathon",
       direction: "right"
-  },
-  {
-    "name": "Tonic",
-    "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    "image": "./assets/images/Snapshoot-Portfolio-3.svg",
-    "technologies": ["Html", "Bootstrap", "Ruby"],
-    "client": "CANOPY",
-    "year":"2015",
-    "role": "Back End Dev",
-    "live-link": "#",
-    "source-link": "#",
-    "direction": "left"
-},
+  }
   
 ]
 
@@ -121,7 +109,7 @@ const displayProjects = ({
 };
 
 const displayProjectDetail = ({
-  name, description, technologies, image, client, year, role,
+  name, description, technologies, image, client, year, role, sourceLink, liveLink,
 }) => {
   const div = document.createElement('div');
   div.className = 'popup-body';
@@ -155,8 +143,8 @@ const displayProjectDetail = ({
               <li>${technologies[2]}</li>
               </ul>
               <div class="popup-buttons">
-                  <button>See live <span><img src="./assets/images/see-live-Icon.svg"></span></button>
-                  <button>See Source <span><img src="./assets/images/see-source.svg"></span></button>
+                  <a href="${liveLink}" target="_blank" rel="noopener noreferrer"><button>See live <span><img src="./assets/images/see-live-Icon.svg"></span></button></a>
+                  <a href="${sourceLink}" target="_blank" rel="noopener noreferrer"><button>See Source <span><img src="./assets/images/see-source.svg"></span></button></a>
               </div>
           </div>
       </div>

@@ -18,6 +18,54 @@ const projects = [
       sourceLink: "https://github.com/V-Blaze/FOODHUB",
       direction: "left"
   },
+  {
+      name: "LEADERBOARD",
+      description: "A JavaScript project for the Leaderboard list app",
+      image: "./assets/images/Leaderboard.png",
+      technologies: ["Html", "JavaScript", "css"],
+      client: "Blaze",
+      year:"2022",
+      role: "Front End Dev",
+      liveLink: "https://rawcdn.githack.com/V-Blaze/Leaderboard/002bba58b4e724a66c5049543887089965626c17/dist/index.html",
+      sourceLink: "https://github.com/V-Blaze/Leaderboard",
+      direction: "right"
+  },
+  {
+      name: "MATH MAGICIANS",
+      description: "A React website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.",
+      image: "./assets/images/Math-magicians.png",
+      technologies: ["React", "JavaScript", "css"],
+      client: "Microverse",
+      year:"2022",
+      role: "Front End Dev",
+      liveLink: "https://math-magicians-saq6.onrender.com/",
+      sourceLink: "https://github.com/V-Blaze/math-magicians",
+      direction: "left"
+  },
+  {
+      name: "WEB3 HACKATHON",
+      description: "This is a website for Web3 Hackathon that entails the program, speakers who will be present and also talks more about the event. It also shows previous events that have happened in different countries. ",
+      image: "./assets/images/web3-hackathon.png",
+      technologies: ["Figma", "JavaScript", "css"],
+      client: "Web3",
+      year:"2022",
+      role: "Front End Dev",
+      liveLink: "https://v-blaze.github.io/Web3_Hackathon/",
+      sourceLink: "https://github.com/V-Blaze/Web3_Hackathon",
+      direction: "right"
+  },
+  {
+    "name": "Tonic",
+    "description": "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    "image": "./assets/images/Snapshoot-Portfolio-3.svg",
+    "technologies": ["Html", "Bootstrap", "Ruby"],
+    "client": "CANOPY",
+    "year":"2015",
+    "role": "Back End Dev",
+    "live-link": "#",
+    "source-link": "#",
+    "direction": "left"
+},
   
 ]
 

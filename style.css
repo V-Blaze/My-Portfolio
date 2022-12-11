@@ -40,6 +40,12 @@ a {
   color: #6070ff;
   padding-left: 24px;
   text-decoration: none;
+  aspect-ratio: 2 / 1;
+}
+
+.logo img {
+  height: 4rem;
+  width: 9rem;
 }
 
 .hamburger {
@@ -142,11 +148,17 @@ a {
 .popup-image {
   display: block;
   height: 35%;
+  aspect-ratio: 2 / 1;
+  border: solid #000 3px;
+  border-radius: 10px;
+  width: 60%;
+  align-self: center;
 }
 
 .popup-image img {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 
 .popup-data {
@@ -204,7 +216,7 @@ a {
   align-items: center;
 }
 
-.popup-buttons button {
+.popup-buttons a {
   background-color: #fff;
   color: #396df2;
   font-weight: 500;
@@ -216,6 +228,18 @@ a {
   text-align: center;
   width: 45%;
   overflow-y: hidden;
+}
+
+.popup-buttons a button {
+  background-color: #fff;
+  color: #396df2;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  border: none;
+  text-align: center;
+  overflow-y: hidden;
+  cursor: pointer;
 }
 
 .show-popup {
@@ -307,7 +331,14 @@ a {
   flex-direction: column;
 }
 
+.work-image {
+  border: solid #000 3px;
+  border-radius: 10px;
+}
+
 .work-image img {
+  border-radius: 10px;
+  aspect-ratio: 2 / 1;
   width: 100%;
 }
 
@@ -490,7 +521,7 @@ a {
   margin-left: 0;
 }
 
-.popup-buttons button span img {
+.popup-buttons a button span img {
   display: inline-block;
   height: 15px;
   width: 15px;

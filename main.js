@@ -5,6 +5,58 @@ const popupModal = document.querySelector('.popup');
 const contactForm = document.querySelector('.contact_form');
 const errorMessage = document.querySelector('.error-msg');
 
+const projects = [
+  {
+    name: 'FOODHUB',
+    description: 'A JavaScript meal app built with crowd-sourced database of Recipes from around the world.',
+    image: './assets/images/Foodhub.png',
+    technologies: ['Html', 'JavaScript', 'css'],
+    client: 'Microverse',
+    year: '2022',
+    role: 'Front End Dev',
+    liveLink: 'https://v-blaze.github.io/FOODHUB/dist/',
+    sourceLink: 'https://github.com/V-Blaze/FOODHUB',
+    direction: 'left',
+  },
+  {
+    name: 'LEADERBOARD',
+    description: 'A JavaScript project for the Leaderboard list app',
+    image: './assets/images/Leaderboard.png',
+    technologies: ['Html', 'JavaScript', 'css'],
+    client: 'Blaze',
+    year: '2022',
+    role: 'Front End Dev',
+    liveLink: 'https://rawcdn.githack.com/V-Blaze/Leaderboard/002bba58b4e724a66c5049543887089965626c17/dist/index.html',
+    sourceLink: 'https://github.com/V-Blaze/Leaderboard',
+    direction: 'right',
+  },
+  {
+    name: 'MATH MAGICIANS',
+    description: 'A React website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.',
+    image: './assets/images/Math-magicians.png',
+    technologies: ['React', 'JavaScript', 'css'],
+    client: 'Microverse',
+    year: '2022',
+    role: 'Front End Dev',
+    liveLink: 'https://math-magicians-saq6.onrender.com/',
+    sourceLink: 'https://github.com/V-Blaze/math-magicians',
+    direction: 'left',
+  },
+  {
+    name: 'WEB3 HACKATHON',
+    description: 'This is a website for Web3 Hackathon that entails the program, speakers who will be present and also talks more about the event. It also shows previous events that have happened in different countries. ',
+    image: './assets/images/web3-hackathon.png',
+    technologies: ['Figma', 'JavaScript', 'css'],
+    client: 'Web3',
+    year: '2022',
+    role: 'Front End Dev',
+    liveLink: 'https://v-blaze.github.io/Web3_Hackathon/',
+    sourceLink: 'https://github.com/V-Blaze/Web3_Hackathon',
+    direction: 'right',
+  },
+
+];
+
 const formData = {
   name: '',
   email: '',
@@ -57,7 +109,7 @@ const displayProjects = ({
 };
 
 const displayProjectDetail = ({
-  name, description, technologies, image, client, year, role,
+  name, description, technologies, image, client, year, role, sourceLink, liveLink,
 }) => {
   const div = document.createElement('div');
   div.className = 'popup-body';
@@ -91,8 +143,8 @@ const displayProjectDetail = ({
               <li>${technologies[2]}</li>
               </ul>
               <div class="popup-buttons">
-                  <button>See live <span><img src="./assets/images/see-live-Icon.svg"></span></button>
-                  <button>See Source <span><img src="./assets/images/see-source.svg"></span></button>
+                  <a href="${liveLink}" target="_blank" rel="noopener noreferrer"><button>See live <span><img src="./assets/images/see-live-Icon.svg"></span></button></a>
+                  <a href="${sourceLink}" target="_blank" rel="noopener noreferrer"><button>See Source <span><img src="./assets/images/see-source.svg"></span></button></a>
               </div>
           </div>
       </div>
@@ -102,17 +154,21 @@ const displayProjectDetail = ({
 };
 
 const getProjects = async () => {
-  const response = await fetch('./projects.json');
+  // const response = await fetch('./projects.json');
 
-  try {
-    const data = await response.json();
+  // try {
+  //   const data = await response.json();
 
-    data.forEach((project, index) => {
-      projectPortfolio.append(displayProjects(project, index));
-    });
-  } catch (error) {
-    // console.log(error);
-  }
+  //   data.forEach((project, index) => {
+  //     projectPortfolio.append(displayProjects(project, index));
+  //   });
+  // } catch (error) {
+  //   // console.log(error);
+  // }
+
+  projects.forEach((project, index) => {
+    projectPortfolio.append(displayProjects(project, index));
+  });
 };
 const addhumburgerEvent = () => {
   document.querySelector('.popup-hamburger').addEventListener('click', () => {
@@ -137,10 +193,10 @@ const getInputData = () => {
 
 window.onload = async () => {
   document.querySelectorAll('.project-button').forEach((button) => button.addEventListener('click', async () => {
-    const response = await fetch('./projects.json');
-    const data = await response.json();
+    // const response = await fetch('./projects.json');
+    // const data = await response.json();
 
-    const item = data[button.id];
+    const item = projects[button.id];
 
     popupModal.append(displayProjectDetail(item));
 
